@@ -189,7 +189,8 @@ h1 {
     margin: auto;
     color: #fff;
 }
-h1 span {
+
+h1> span {
     display: block;
     font-size: 18px;
     letter-spacing: 0.43em;
