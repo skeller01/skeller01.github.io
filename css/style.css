@@ -129,6 +129,15 @@
   border-top: 1px solid #c9c9c9; 
 }
 
+/*STYLE FOR SERVICES*/
+.servicesTpadTop{
+    padding-top: 50px;
+}
+
+.bottomPad{
+    padding-bottom: 20px;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
