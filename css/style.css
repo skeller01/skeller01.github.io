@@ -2,8 +2,6 @@
 /* SETUP
 /*******************************************/
 
-.someClass {}
-
 /* Box Model Hack */
 * {
      -moz-box-sizing: border-box; /* Firexfox */
@@ -135,6 +133,24 @@
 .servicesTpadTop{
     padding-top: 50px;
 }
+.services .panel-group .panel {
+  border-radius: 0;
+  background: none;
+  border-color: #dd4400;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.services .panel-heading {
+  background: none;
+}
+.services .panel-body, .services .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #dd4400;
+}
+
+.services .glyphicon {
+  color: #dd4400;
+}
 
 .bottomPad{
     padding-bottom: 20px;
@@ -231,4 +247,34 @@ h1> span {
 
 .centered{
     text-align: center;
+}
+
+.mobile-only {
+	display: none;
+}
+.desktop-only {
+  display: block;
+}
+
+/******************************************
+/* MOBILE SETTINGS
+/*******************************************/
+/* Phone */
+@media (max-width: 480px) {
+	.mobile-only {
+		display: block;
+	}
+  .desktop-only {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media (max-width: 960px) and (min-width: 481px) {
+	.mobile-only {
+		display: block;
+	}
+  .desktop-only {
+    display: none;
+  }
 }
