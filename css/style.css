@@ -2,8 +2,6 @@
 /* SETUP
 /*******************************************/
 
-.someClass {}
-
 /* Box Model Hack */
 * {
      -moz-box-sizing: border-box; /* Firexfox */
