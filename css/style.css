@@ -77,6 +77,12 @@
     color: #fff;
 }
 
+.contactUs{
+  
+    padding: 50px 15px 60px;
+    
+}
+
 .text-muted{
     color: grey;
     font-size: 100;
@@ -155,6 +161,49 @@
 .bottomPad{
     padding-bottom: 20px;
 }
+
+/*FOOTER*/
+footer#footer {
+  padding: 60px 0 0 0;
+  background-color: black;
+  color: white;
+}
+
+  footer#footer #footer-nav {
+    border-top: 1px solid #fff;
+    margin-top: 35px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+    footer#footer #footer-nav a {
+      color: #fff;
+    }
+    
+    footer#footer #footer-nav p {
+      font-size: 14px;
+    }
+    
+  footer#footer #copyright {
+  }
+    
+    footer#footer #copyright .title {
+      margin-top: 50px;
+    }
+  
+    footer#footer #copyright p {
+      font-size: 18px;
+    }
+    
+    footer#footer #copyright a {
+      color: #ff9900;
+    }
+    
+    footer#footer .social-links a {
+      color: #b2b2b2;
+      font-size: 16px;
+      margin-right: 10px;
+    }
 
 /******************************************
 /* ADDITIONAL STYLES
