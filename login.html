@@ -35,14 +35,7 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="login.html">Login</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="1000" data-toggle="dropdown">Sign Up <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="contact.html">Free Demo</a></li>
-                                <li><a href="contact.html">Photographer Sign Up</a></li>
-                                
-                            </ul>
-                        </li>
+                       <li><a href="sign_up.html">Sign Up</a></li>
                     </ul>
                 </div> 
              </div>      
@@ -75,8 +68,25 @@
 
                                                    
 
-                        <form accept-charset="utf-8" class="form-vertical" method="POST" action="http://icprogressphotos.com/login">        <div class="control-group"><label for="username" class="control-label">Username</label><div class="controls"><input placeholder="Username" class="form-control" id="username" type="text" name="username"></div></div>        <div class="control-group"><label for="password" class="control-label">Password</label><div class="controls"><input placeholder="Password" class="form-control" id="password" type="password" name="password"></div></div><br>        <input class="btn btn-primary btn-block btn-try-it-now" type="submit" value="Sign In">        <a href="/recovery" class="pull-right"><small>Forgot password</small></a>
-                            <input type="hidden" name="_token" value="kaqatPNMu75RYvbiGHqfnMzJB9BuKSRPeXMdRiOj"></form> 
+                        <form accept-charset="utf-8" class="form-vertical" method="POST" action="http://icprogressphotos.com/login">        
+                            <div class="control-group">
+                                <label for="username" class="control-label">Username</label>
+                                <div class="controls">
+                                    <input placeholder="Username" class="form-control" id="username" type="text" name="username">
+                                </div>
+                            </div>        
+                            <div class="control-group">
+                                <label for="password" class="control-label">Password</label>
+                                <div class="controls">
+                                    <input placeholder="Password" class="form-control" id="password" type="password" name="password">
+                                </div>
+                            </div>
+                            <br>        
+                            <input class="btn btn-primary btn-block btn-try-it-now" type="submit" value="Sign In">        
+                            <a data-toggle="modal" data-target="#myModal" class="pull-right">
+                                <small>Forgot password</small></a>
+                            <input type="hidden" name="_token" value="kaqatPNMu75RYvbiGHqfnMzJB9BuKSRPeXMdRiOj">
+                        </form> 
                         
                     </div>
 
@@ -85,8 +95,55 @@
 
             </div>
 
-        </div>
+        </div> <!-- End of Services Container  -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Reset Password</h4>
+              </div>
+              <div class="modal-body"> <!-- beginning of modal  -->
+
+
+                    
+                
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <strong>Reset your Password?</strong>
+
+                            <p>Please enter your email address or username and we will send you an email with instructions to reset your password.</p>
+
+                            <form accept-charset="utf-8" class="form-vertical" method="POST">            
+                                <div class="control-group">
+                                    <label for="email" class="control-label">Email/Username</label>
+                                    <div class="controls"><input placeholder="Email" id="email" type="text" name="email">
+                                    </div>
+                                </div>            
+                                <div class="form-actions">
+                                    <input class="btn btn-primary pull-right btn-try-it-now" type="submit" value="Submit">            
+                                </div>
+                                <input type="hidden" name="_token" value="iYykU3qTal4hPmmy6MaIShM36KocVhkFvbuqBwP1">
+                            </form>      
+                        </div>
+                    </div>
+                
+
+
+
+
+
+
+              </div> <!-- End of Modal  -->
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div> -->
+            </div>
+          </div>
+        </div> <!-- End of Full Modal -->
 
              <!-- End of Video -->
                
@@ -180,7 +237,7 @@
                     <div class="col-sm-6">
                         <h3 class="tpad">DEMO</h3><hr>
                         <p>Reach out and try it for yourself. No matter how big the job, our services will make documenting and tracking progress easier.</p>
-                        <p><a class="btn btn-large btn-primary btn-try-it-now" href="contact.html">Try it now!</a></p>
+                        <p><a class="btn btn-large btn-primary btn-try-it-now" href="sign_up.html">Try it now!</a></p>
                     </div>
                 </div>
             </div>    

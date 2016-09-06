@@ -35,7 +35,7 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="login.html">Login</a></li>
-                       <li><a href="sign_up.html">Sign Up</a></li>
+                        <li><a href="sign_up.html">Sign Up</a></li>
                     </ul>
                 </div> 
              </div>      
@@ -44,10 +44,10 @@
         <div class="intro-block">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <img class="img-responsive tpad img-rounded" src="images/manhattan.jpg">
+                    <div class="col-sm-3">
+                       <!--  <img class="img-responsive tpad img-rounded" src="images/interior_construction.jpg"> -->
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-sm-9">
                         <h2>IC Progress | <span class="text-muted">Construction Photography</span></h2><hr>
                         <p class="lead">IC Progress provides the best construction site documentation services including photographic, video and time lapse documentation.</p>
                     </div>
@@ -56,29 +56,100 @@
         </div><!-- End Intro Text -->
         
         <!-- Beginning of Services content -->
-        <div class="about tpad">
+        <div class="services tpad bottomPad">
             <div class = "container">
               
                 
                 <div class ="row">
-                    <div class = "col-md-6">
-                            <h3>About Us</h3><hr>
+                    <div class = "col-sm-6">
+                                <h3 class="heading-success">Please Sign In</h3>
+
+                                <p>Please sign in using your username and password below. If you do not have one, please speak to your account manager.</p>
+
+                                <form accept-charset="utf-8" class="form-vertical" method="POST" action="http://icprogressphotos.com/login">        
+                                    <div class="control-group">
+                                        <label for="username" class="control-label">Username</label>
+                                        <div class="controls">
+                                            <input placeholder="Username" class="form-control" id="username" type="text" name="username">
+                                        </div>
+                                    </div>        
+                                    <div class="control-group">
+                                        <label for="password" class="control-label">Password</label>
+                                        <div class="controls">
+                                            <input placeholder="Password" class="form-control" id="password" type="password" name="password">
+                                        </div>
+                                    </div>
+                                    <br>        
+                                    <input class="btn btn-primary btn-block btn-try-it-now" type="submit" value="Sign In">        
+                                        <a data-toggle="modal" data-target="#myModal" class="pull-right">
+                                            <small>Forgot password</small></a>
+                                    <input type="hidden" name="_token" value="kaqatPNMu75RYvbiGHqfnMzJB9BuKSRPeXMdRiOj">
+                                </form> 
                         
-                            <p>IC Progress provides construction site documentation services including photographic, video and time lapse documentation. For the first time, WiFi enabled cameras are capable of transmitting your files while the photographer is still on site. You can get your pictures in real time, NOW, with no more delays! At IC Progress we work with owners, developers, investors and general contractors to help ensure your job is completed in a safe and timely manner.
-                             </p>
-                            <p>Our team developed an improved system for visually documenting your construction projects through progressive advancements in technology. You can securely log in and view all your photos in one beautifully organized and streamlined website. We proudly serve anyone in the construction industry with affordable pricing, quality assistance, professionalism and timely service. Our company is fully insured, our photographers are properly trained in construction site safety and are equipped with proper PPE. 
+                        </div>
 
-                            <p> View our <a class="link" href="services.html">services!</a> </p>
-                            <p class="bottomPad">
-                             <a class="btn btn-large btn-primary btn-try-it-now" href="sign_up.html">Try us out!</a></p>
+
+
+                    <div class = "col-sm-6">
                             
+                            <h3 class="heading-success">Or Sign Up</h3>
 
-                     
-                    </div>
+                                <p>Please sign up by choosing your username and password below.</p>
 
-                    <div class = "col-md-6">
-                            
-                        <img class = "img-responsive tpad bottomPad" src="images/interior_construction.jpg">
+                                <form accept-charset="utf-8" class="form-vertical" method="POST">            
+                                    <div class="control-group required">
+                                        <label for="company" class="control-label">Company Name<sup>*</sup></label>
+                                        <div class="controls">
+                                            <input required="true" class="form-control" id="company" type="text" name="company">
+                                        </div>
+                                    </div>            
+                                    <div class="control-group required">
+                                        <label for="firstName" class="control-label">First Name<sup>*</sup>
+                                        </label>
+                                        <div class="controls">
+                                            <input required="true" class="form-control" id="firstName" type="text" name="firstName">
+                                        </div>
+                                    </div>            
+                                    <div class="control-group">
+                                        <label for="lastName" class="control-label">Last Name</label>
+                                        <div class="controls">
+                                            <input id="lastName" class="form-control" type="text" name="lastName">
+                                        </div>
+                                    </div>
+                                    <div class="control-group required">
+                                        <label for="email" class="control-label">Email<sup>*</sup>
+                                        </label>
+                                        <div class="controls">
+                                            <input required="true" class="form-control" id="email" type="email" name="email">
+                                        </div>
+                                    </div>
+                                    <div class="control-group required">
+                                        <label for="username" class="control-label">Username<sup>*</sup>
+                                        </label>
+                                        <div class="controls">
+                                            <input required="true" class="form-control" pattern='[a-zA-Z0-9]+' id="username" type="text" name="username">
+                                        </div>
+                                    </div>            
+                                    <div class="control-group required">
+                                        <label for="password" class="control-label">Password<sup>*</sup>
+                                        </label><div class="controls"><input required="true" class="form-control" id="password" type="text" name="password"></div>
+                                    </div>            
+                                    <div class="control-group">
+                                        <label for="password_confirmation" class="control-label">Confirm Password</label>
+                                        <div class="controls">
+                                            <input id="password_confirmation" class="form-control" type="text" name="password_confirmation">
+                                        </div>
+                                    </div>            
+                                    <div class="control-group">
+                                        <div class="controls mycheckboxdiv">
+                                            <label for="tos" class="checkbox">
+                                                <input id="tos" type="checkbox" class="mycheckbox pull-right" name="tos" value="1">I agree with the Terms of Service.
+                                            </label>
+                                        </div>
+                                    </div>            
+                                    <input type="submit" value="Sign up" class="btn btn-block btn-primary btn-try-it-now pull-right">
+
+                                </form> 
                         
                     </div>
 
@@ -87,8 +158,55 @@
 
             </div>
 
-        </div>
+        </div> <!-- End of Services Container  -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Reset Password</h4>
+              </div>
+              <div class="modal-body"> <!-- beginning of modal  -->
+
+
+                    
+                
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <strong>Reset your Password?</strong>
+
+                            <p>Please enter your email address or username and we will send you an email with instructions to reset your password.</p>
+
+                            <form accept-charset="utf-8" class="form-vertical" method="POST">            
+                                <div class="control-group">
+                                    <label for="email" class="control-label">Email/Username</label>
+                                    <div class="controls"><input placeholder="Email" id="email" type="text" name="email">
+                                    </div>
+                                </div>            
+                                <div class="form-actions">
+                                    <input class="btn btn-primary pull-right btn-try-it-now" type="submit" value="Submit">            
+                                </div>
+                                <input type="hidden" name="_token" value="iYykU3qTal4hPmmy6MaIShM36KocVhkFvbuqBwP1">
+                            </form>      
+                        </div>
+                    </div>
+                
+
+
+
+
+
+
+              </div> <!-- End of Modal  -->
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div> -->
+            </div>
+          </div>
+        </div> <!-- End of Full Modal -->
 
              <!-- End of Video -->
                
@@ -101,10 +219,8 @@
                         <h3>What Our Clients Are Saying</h3><hr>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-sm-6 tabbable">
-                        
                         <!-- Tabs go here -->
                         <ul id="myTab" class="nav nav-tabs">
                             <li class="active"><a href="#flexible" data-toggle="tab">Flexible</a></li>
@@ -175,7 +291,7 @@
             </div>       
         </div>
 <!-- info panel end --> 
-        <div class="marketin bottomPad">
+        <div class="marketing bottomPad">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">

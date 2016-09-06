@@ -152,6 +152,33 @@
     color:#fff;
 }
 
+.btn-try-it-now:active{
+    background-color: #ff6600;
+    color:#fff;
+}
+
+.btn-try-it-now:visited{
+    background-color: #dd4400;
+    color:#fff;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    background-color: #dd4400;
+    color:#fff;
+}
+
+.btn-primary:hover {
+    background-color: #dd4400;
+    color:#fff;
+    border-color: #dd4400;
+}
+.btn-primary.focus, .btn-primary:focus {
+    background-color: #dd4400;
+    color:#fff;
+    border-color: #dd4400;
+}
+
+
 /*Makes Links Orange as Default*/
     a {
     color: #dd4400;
@@ -168,11 +195,20 @@
     text-decoration: underline;
 }
 
+
 .form-control:focus {
     border-color: orange;
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px orange;
+}
+
+.mycheckbox{
+  margin-top:5px;
+  margin-left:5px;
+}
+.mycheckboxdiv{
+   text-align:right;
 }
 
 /*STYLE FOR SERVICES*/
