@@ -136,6 +136,27 @@
   border-top: 1px solid #c9c9c9; 
 }
 
+/*Style for Brand Image*/
+.navbar-default {
+    background-color: white;
+    border-color: #e7e7e7;
+}
+
+  .navbar-left img {
+    width: 50%;
+    height: 55px;
+}
+
+@media (max-width:1200px) and (min-width:768px) {
+    .navbar-left {
+    width: 310px;
+}
+.navbar-left img {
+    width: 70%;
+    height: 55px;
+}
+}
+
 /*Style for Buttons*/
 .btn-try-it-now {
  /*width: 200px;
